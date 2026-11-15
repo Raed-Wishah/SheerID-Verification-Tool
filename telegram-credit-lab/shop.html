@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>شحن رصيد التمارين</title>
+  <style>
+    :root {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      color: #102b26;
+      background: #edf4ef;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main {
+      width: min(100% - 2rem, 44rem);
+      margin: clamp(1rem, 8vw, 5.5rem) auto;
+      padding: clamp(1.25rem, 5vw, 3rem);
+      border: 1px solid #ccded1;
+      border-radius: 1.25rem;
+      background: #fff;
+      box-shadow: 0 1rem 3rem #153d2310;
+    }
+    header { padding-block-end: 1.5rem; }
+    h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.25rem); line-height: 1.2; }
+    h2 { margin-block: 0 .5rem; font-size: 1.4rem; }
+    p { margin-block: .5rem 0; line-height: 1.65; color: #3e5850; }
+    .balance {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: .75rem;
+      padding: .8rem 1rem;
+      margin-block-end: 1.5rem;
+      background: #edf5ee;
+      border-radius: .6rem;
+    }
+    .balance strong { font-variant-numeric: tabular-nums; }
+    fieldset { border: 0; margin: 0; padding: 0; min-inline-size: 0; }
+    legend { padding: 0; margin-block-end: .75rem; font-weight: 700; }
+    .packs { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+    .pack {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      min-block-size: 4rem;
+      padding: .75rem;
+      border: 1px solid #b4cbbb;
+      border-radius: .6rem;
+      cursor: pointer;
+    }
+    .pack:has(input:checked) { background: #edf5ee; border-color: #176740; }
+    input { margin: 0; accent-color: #176740; }
+    button {
+      width: 100%;
+      min-height: 3rem;
+      margin-block-start: 1.25rem;
+      padding: .65rem 1rem;
+      border: 0;
+      border-radius: .6rem;
+      background: #165d3a;
+      color: #fff;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover { background: #124b30; }
+    :focus-visible { outline: 3px solid #315cb8; outline-offset: 4px; }
+    small { display: block; margin-block-start: .75rem; color: #3e5850; }
+    .notice { border-block-start: 1px solid #ccded1; padding-block-start: 1rem; }
+    @media (max-width: 35rem) {
+      .packs { grid-template-columns: 1fr; }
+      .pack { min-block-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>شحن رصيد التمارين</h1>
+      <p>كل كريديت بيكفي لتمرين محاكاة واحد في البوت.</p>
+    </header>
+    <!-- CHECKOUT -->
+  </main>
+</body>
+</html>
